@@ -15,7 +15,7 @@ class magician:
 
         print(item)
 
-char1 = magician('Item',True) #클래스를 생성
+char1 = magician('Item') #클래스를 생성
 
 char1.attack() #클래스에 메소드(함수)를 사용
 char1.drink_potion()
