@@ -5,19 +5,21 @@ bloodList = ['A','B','AB','O','O','A','AB','B','B','AB','P']
 
 #변수가 최소 4개는 나와야해요
 
-acount = 0
-abcount = 0
-ocount = 0
-bcount = 0
+acount = 0 # 2
+abcount = 0 # 3
+ocount = 0 # 2
+bcount = 0 # 3
 
 for blood in bloodList:
-    if blood == 'A' :
+    if blood == 'A':
         acount = acount + 1
-    elif blood == 'B' :
+    elif blood == 'B':
         bcount = bcount + 1
-    elif blood == 'AB':
-        abcount = abcount + 1
     elif blood == 'O':
         ocount = ocount + 1
+    elif blood == 'AB':
+        abcount = abcount + 1
     else:
-        print("형태가 맞지 않는 값이 포함되어있어요. 확인하세요")
+        print('혈액형이 아닌값이 있네요')
+
+print(acount,bcount,abcount,ocount)

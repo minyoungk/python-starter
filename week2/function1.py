@@ -21,8 +21,10 @@
 
 # return은 호출한애에게 값을 돌려줄때 사용한다.
 # 함수안에 return이 있을수도 없을수도 있다. 개발자마음
-def sum(a, b):
+
+
+def sum(a = 0, b = 0):
     return a + b
 
-result = sum(3,4)
+result = sum()
 print(result)

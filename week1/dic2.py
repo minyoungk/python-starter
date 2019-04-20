@@ -5,7 +5,6 @@
 aMemberList = {'짱구' : {'age':7, 'sex':'m'},
                '짱아' : {'age' : 3, 'sex':'f'}}
 
-print(aMemberList)
-print(aMemberList['짱구'])
 print(aMemberList['짱구']['age'])
+
 #print(aMemberList[name]['age'])

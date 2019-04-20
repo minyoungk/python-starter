@@ -4,7 +4,7 @@
 
 try:
     number = int(input())
-except IndexError:
+except ValueError:
     print("숫자만 입력해라")
 except SyntaxError:
     print("숫자만 입력해라")

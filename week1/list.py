@@ -4,6 +4,6 @@
 # 리스트에서 값에 접근 할 때는 대괄호를 이용해서 접근한다
 # 첫번째는 1이 아닌 0 이다
 
-
 aFruitList = ['banana', 'apple', 'orange']
-print(aFruitList[1])
+aFruitList[0] = 'pineapple'
+print(aFruitList[0])

@@ -3,5 +3,5 @@
 # 튜플과 리스트의 차이점은 튜플은 한번 정의하면 수정이 불가능하다
 
 aFruitList = ('apple', 'orange', 'pineapple')
-
-print(aFruitList)
+aFruitList[0] = 'pineapple'
+print(aFruitList[0])

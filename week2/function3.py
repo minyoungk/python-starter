@@ -1,6 +1,8 @@
 # 학생의 나이를 알려주는 함수
-def getAgeInMember(member, name):
-    return member[name]['age']
+def getAgeInMember(a, b):
+    print(a)
+    print(b)
+    return a[b]['age']
 
 member = {
     '짱구' : { 'age' : 7, 'sex' : 'M'},

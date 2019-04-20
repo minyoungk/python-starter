@@ -6,19 +6,17 @@
 # __init__에서 매개변수로 받는데 첫번째 self가아닌 두번째부터 매칭된다.
 
 class magician:
-    def __init__(self, item, mode):
+    def __init__(self, item = ''):
+        print('a')
         # 속성값
-        self.max_hp = 150
         self.hp = 100
         self.mp = 200
         self.str = 5
+        self.item = item
 
-        print(item)
+    def attack(self):
+        print('b')
+        print('공격')
+        self.mp = self.mp - 10
 
-char1 = magician('Item') #클래스를 생성
-
-char1.attack() #클래스에 메소드(함수)를 사용
-char1.drink_potion()
-char1.drink_potion()
-
-print(char1.hp) #클래스에 속성값에 접근
+char1 = magician('item') #클래스를 생성

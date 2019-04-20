@@ -4,8 +4,11 @@
 # read() - 스트링 형태로 다 읽어들인다.
 
 f = open("새파일.txt", 'r')
-# line = f.readline()
-# print(line)
+
+line = f.readlines(encoding='utf8')
+print(line)
+
+
 # line = f.readline()
 # print(line)
 # f.close()
@@ -16,6 +19,6 @@ f = open("새파일.txt", 'r')
 #     print(line)
 # f.close()
 
-data = f.read()
-print(data)
-f.close()
+# data = f.read()
+# print(data)
+# f.close()
