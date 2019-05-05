@@ -6,8 +6,7 @@
 # __init__에서 매개변수로 받는데 첫번째 self가아닌 두번째부터 매칭된다.
 
 class magician:
-    def __init__(self, item = ''):
-        print('a')
+    def __init__(self, item = '', i):
         # 속성값
         self.hp = 100
         self.mp = 200
@@ -15,8 +14,9 @@ class magician:
         self.item = item
 
     def attack(self):
-        print('b')
         print('공격')
         self.mp = self.mp - 10
 
-char1 = magician('item') #클래스를 생성
+char1 = magician('item', 3) #클래스를 생성
+char1.attack()
+print(char1.mp)

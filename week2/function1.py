@@ -26,5 +26,5 @@
 def sum(a = 0, b = 0):
     return a + b
 
-result = sum()
+result = sum(1, 3)
 print(result)

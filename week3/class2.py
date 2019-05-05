@@ -17,7 +17,7 @@ class common:
 
 class prot(common): #프로토스 종족
     def getM(self): #미네랄 캐는 메소드
-        self.m = self.m + 6
+        self.m = self.m + 5
 
     def makeProve(self):
         if self.m < 3:
@@ -31,13 +31,11 @@ class prot(common): #프로토스 종족
             print('프로브 생성 완료')
 
 prot1 = prot()
+print(prot1.m)
 prot1.getM()
 prot1.getG()
+print(prot1.m)
 
-prot1.makeProve()
-prot1.makeProve()
-prot1.makeProve()
-prot1.makeProve()
 
 # class zerg(common):
 #     def makeDron(self):

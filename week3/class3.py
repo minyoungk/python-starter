@@ -7,11 +7,6 @@ class common():
         self.hp_potion = 10
         self.mp_potion = 10
 
-        self.init()
-
-    def init(self):
-        print("재정의")
-
     def attack(self):
         print("공격 하였습니다")
         self.level_up(50)

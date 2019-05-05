@@ -32,6 +32,7 @@ while True:
     if number == tusu_number:
         print("홈런")
         taja1.homerun()
+
     elif tusu_number == 1 or tusu_number == 3:
         print("볼")
         ball_count = ball_count + 1
