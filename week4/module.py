@@ -1,11 +1,15 @@
-#모듈
+# import 모듈명
+# 모듈명은 "경로"를 입력해주고 .py는 제외
 
-#모듈은 함수 or 클래스의 모음
-#import 모듈명
-#사용시 모듈명.함수명()
+# import calc
+#
+# result = calc.add(3,4)
+#
+# print(result)
 
-import calc
 
-result = calc.add(3, 4)
+# from 모듈명 import 함수명, 함수명2 ....
+from calc import add
 
+result = add(3,4)
 print(result)
