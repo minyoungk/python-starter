@@ -36,7 +36,7 @@ while True:
     elif tusu_number == 1 or tusu_number == 3:
         print("볼")
         ball_count = ball_count + 1
-        if ball_count > 4:
+        if ball_count > 3:
             taja1.score = taja1.score + 10
     else:
         print("스트라이크")
