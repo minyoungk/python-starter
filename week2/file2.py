@@ -3,10 +3,18 @@
 # readlines() - 리스트 형태로 바꿔준다
 # read() - 스트링 형태로 다 읽어들인다.
 
-f = open("새파일.txt", 'r')
+f = open("새파일.txt", 'r', encoding='utf8')
 
-line = f.readlines(encoding='utf8')
+line = f.read()
 print(line)
+
+
+
+
+
+
+
+
 
 
 # line = f.readline()

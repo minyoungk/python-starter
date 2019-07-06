@@ -1,0 +1,6 @@
+from bs4 import BeautifulSoup
+import requests
+
+r = requests.get('https://news.nate.com/recent?mid=n0100')
+print(r.text)
+bs0bject =  BeautifulSoup(r.text, 'html.parser')

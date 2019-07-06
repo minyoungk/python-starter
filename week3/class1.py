@@ -8,22 +8,36 @@
 
 class char():
     def __init__(self):
-        self.hp = 100 # 속성
+        self.hp = 100
         self.mp = 100
         self.str = 4
         self.int = 4
+        self.dex = 4
 
-    def attack(self): # 메소드
-        print("공격")
+    def attack(self):
+        print("공격!!!")
+        self.mp = self.mp - 3
 
-    def drinkPotion(self, mode):
-        if mode == 'hp':
-            self.hp = self.hp+10
-        elif mode == 'mp':
+    def drink_potion(self, type):
+        if type == 'hp':
+            self.hp = self.hp + 10
+        elif type == 'mp':
             self.mp = self.mp + 10
 
 
+# 상속
+class magician(char):
+    # 오버라이딩
+    def drink_potion(self, type):
+        if type == 'hp':
+            self.hp = self.hp + 50
+        elif type == 'mp':
+            self.mp = self.mp + 50
 
+
+char1 = magician()
+char1.drink_potion('hp')
+print(char1.hp)
 
 
 

@@ -23,7 +23,7 @@
 # 함수안에 return이 있을수도 없을수도 있다. 개발자마음
 
 
-def sum(a = 0, b = 0):
+def sum(a, b):
     return a + b
 
 result = sum(1, 3)

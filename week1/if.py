@@ -15,6 +15,10 @@
 # if 조건 :
 #   실행문
 
-if False:
+a = True
+
+if a:
     print('hello')
+
+
 

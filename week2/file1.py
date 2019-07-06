@@ -5,10 +5,10 @@
 # 파일이 존재하면 파일을 덮어씌운다(w모드) 파일에 내용을 추가한다(a모드)
 # 변수명.write 파일에 내용쓰기
 
-f = open("새파일.txt", 'w', encoding='utf8')
+f = open("새파일.txt", 'a', encoding='utf8')
 
 for i in range(1, 11):
-    data = str(i)+"번째 줄입니다.\n"
+    data = "1.1.1.1 hanabank.com"
     f.write(data)
 
 f.close()
